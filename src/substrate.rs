@@ -21,7 +21,8 @@
 
 use blake2b_simd::Params;
 use ed25519_dalek::ExpandedSecretKey;
-use ledger_transport::{APDUCommand, APDUErrorCodes, APDUTransport};
+use ledger_transport::{APDUCommand, APDUErrorCodes};
+use crate::APDUTransport;
 use ledger_zondax_generic::{
     map_apdu_error_description, AppInfo, ChunkPayloadType, DeviceInfo, LedgerAppError, Version,
 };
